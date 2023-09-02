@@ -1,29 +1,10 @@
-# ==============================================================
-# WAX CONFIGURATION
-# ==============================================================
-# Jekyll configuration files are written in YAML format.
-# Colons, tabs/spacing, and quotes are meaningful in YAML.
-# It is recommended you look at the following guide to avoid
-# syntax errors in this file:
-# ~> https://learnxinyminutes.com/docs/yaml/
-#
-#
-# Questions ?
-# ~> https://minicomp.github.io/wiki/#/
-#
-# ---------------------------------------------------------------
-# MAIN SETTINGS
-# ---------------------------------------------------------------
-# Feel free to change these! For more info, refer to:
-# ~> https://jekyllrb.com/docs/configuration/options/
-
-title:            'Wax'
+title:            'Jade Project Test in Wax'
 description:      'Minimal Exhibitions with Jekyll'
-url:              'https://minicomp.github.io'
+url:              'https://spswanz.github.io'
 baseurl:          '/wax'
-copyright:        'Example copyright org, 2023'
-logo:             '/assets/logo.png'
-default_thumb:    '/assets/default.png'
+copyright:        'Copyright 2023'
+logo:             '/assets/WashULogoRGBLong.png'
+default_thumb:    '/assets/WashU_shield_large.png'
 
 # ---------------------------------------------------------------
 # BUILD SETTINGS
@@ -59,13 +40,13 @@ kramdown:
 collections:
   exhibits:
     output: true
-  qatar: # name of collection
+  jades: # name of collection
     output: true # makes sure pages are output as html files
-    layout: 'qatar_item' # the layout for the pages to use
+    layout: 'jade_item' # the layout for the pages to use
     metadata:
-      source: 'qatar.csv' # path to the metadata file within `_data`
+      source: 'jades.csv' # path to the metadata file within `_data`
     images:
-      source: 'raw_images/qatar' # path to the directory of images within `_data`
+      source: 'raw_images/jades' # path to the directory of images within `_data`
 
 # --------------------------------------------------------------
 # SEARCH INDEX SETTINGS
@@ -82,11 +63,11 @@ search:
       qatar:
         content: false # whether or not to index page content
         fields: # the metadata fields to index
-          - artist
           - location
           - label
           - _date
           - object_type
+          - object_source
           - current_location
 
 # --------------------------------------------------------------
@@ -125,13 +106,14 @@ menu:
 
 footer:
   links:
-    - label: 'GitHub'
-      link: 'https://github.com/minicomp/wax'
+    # - label: 'GitHub'
+    #   link: 'https://github.com/minicomp/wax'
     - label: 'Credits'
       link: '/credits'
-    - label: 'Wiki'
-      link: 'https://minicomp.github.io/wiki/wax/'
+    # - label: 'Wiki'
+    #   link: 'https://minicomp.github.io/wiki/wax/'
   logos:
-    - img: '/img/logo.png'
+    - img: '/assets/WashULogoRGBLong.png'
+      link: 'https://wustl.edu/'
 
 # FIN
